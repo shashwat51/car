@@ -1,0 +1,175 @@
+{
+	"info": {
+		"_postman_id": "21f11aac-8dae-4183-baf5-c7fbe7410b9e",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetAllCars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/allcars",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"allcars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "carsbyMake",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/carsbyMake?make=Toyota",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"carsbyMake"
+					],
+					"query": [
+						{
+							"key": "make",
+							"value": "Toyota"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "carsbyMakeAndModel",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/carsbyMakeAndModel?make=Toyota&model=Camry",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"carsbyMakeAndModel"
+					],
+					"query": [
+						{
+							"key": "make",
+							"value": "Toyota"
+						},
+						{
+							"key": "model",
+							"value": "Camry"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "carsbyMakeAndModelYear",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/carsbyMakeAndModel?make=Toyota&model=Camry",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"carsbyMakeAndModel"
+					],
+					"query": [
+						{
+							"key": "make",
+							"value": "Toyota"
+						},
+						{
+							"key": "model",
+							"value": "Camry"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pricebyMakeAndModelYear",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/pricebyMakeAndModelAndYear?make=Toyota&model=Camry&year=2011",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pricebyMakeAndModelAndYear"
+					],
+					"query": [
+						{
+							"key": "make",
+							"value": "Toyota"
+						},
+						{
+							"key": "model",
+							"value": "Camry"
+						},
+						{
+							"key": "year",
+							"value": "2011"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pricebyMakeAndModelYearMileage",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/pricebyMakeAndModelAndYearMileage?make=Toyota&model=Camry&year=2011&mileage=20000",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pricebyMakeAndModelAndYearMileage"
+					],
+					"query": [
+						{
+							"key": "make",
+							"value": "Toyota"
+						},
+						{
+							"key": "model",
+							"value": "Camry"
+						},
+						{
+							"key": "year",
+							"value": "2011"
+						},
+						{
+							"key": "mileage",
+							"value": "20000"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
